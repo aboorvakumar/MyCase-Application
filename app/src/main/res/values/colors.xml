@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9D0A93</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="green">#8bc34a</color>
+    <color name="lightblue">#039be5</color>
+    <color name="purple">#ba68c8 </color>
+    <color name="red">#ef5350</color>
+    <color name="amber">#ffca28</color>
+    <color name="brown">#a1887f</color>
+    <color name="white">#ffffff</color>
+    <color name="bluedrken">#0d47a1 </color>
+
+    <color name="alarm_title_active">#dddddd</color>
+    <color name="alarm_title_outdated">#888888</color>
+    <color name="alarm_details">#888888</color>
+
+    <color name="dark_grey">#ffffff</color>
+    <color name="black">#CDAF59</color>
+<color name="ak">#CDAF59</color>
+</resources>

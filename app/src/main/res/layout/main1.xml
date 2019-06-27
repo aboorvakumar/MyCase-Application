@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="0sp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="10"
+    >
+
+    <Button
+        style="@style/widget"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/add_alarm"
+        android:text="Add Reminder"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:onClick="onAddAlarmClick" />
+
+    <ListView
+        android:id="@+id/alarm_list"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="8"  />
+
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:id="@+id/pref"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_alarm_settings"
+            android:padding="5dp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reminder Settings"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+

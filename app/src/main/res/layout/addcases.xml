@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/user"
+            android:tint="@color/colorPrimary" />
+
+        <Spinner
+            android:id="@+id/spCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="5dp" />
+       <!-- <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Client Name"/>-->
+
+
+        <!--<Spinner
+            android:id="@+id/spCompany"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner"
+            android:spinnerMode="dropdown"/>-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/casenumber"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/case_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/txt_caseno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="textCapWords"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="13dp"
+                    android:theme="@style/AppTheme"
+                    android:hint="Case Number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/title"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/case_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/txt_casetitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGKHIJKLMNOPQRSTUVWXYZ"
+                    android:inputType="textCapWords"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="13dp"
+                    android:theme="@style/AppTheme"
+                    android:hint="Case Title"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+       <!-- <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:tint="#bdbdbd"
+                android:src="@drawable/userp"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/client_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/txt_cname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGKHIJKLMNOPQRSTUVWXYZ"
+                    android:inputType="textCapWords"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="13dp"
+                    android:theme="@style/AppTheme"
+                    android:hint="Client Name"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>-->
+
+        <!--<LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:tint="#bdbdbd"
+                android:src="@drawable/userp"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/client_phoneno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/phoneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:inputType="number"
+                    android:digits="0123456789+"
+                    android:maxLength="15"
+                    android:textSize="13dp"
+                    android:theme="@style/AppTheme"
+                    android:hint="Phone No"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>-->
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/userp"
+                android:tint="#bdbdbd" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernameWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:textSize="13dp"
+                android:theme="@style/AppTheme"
+                />
+
+             </android.support.design.widget.TextInputLayout>
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/folder"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/case_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/txt_casename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGKHIJKLMNOPQRSTUVWXYZ"
+                    android:inputType="textCapWords"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="13dp"
+                    android:theme="@style/AppTheme"
+                    android:hint="Case Name"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/casedetails"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/case_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/txt_cdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGKHIJKLMNOPQRSTUVWXYZ"
+                    android:inputType="textCapWords"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="13dp"
+                    android:theme="@style/AppTheme"
+                    android:hint="Case Details"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--<TextView
+                android:layout_marginLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="About Case"
+                android:textSize="15sp" />-->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/document"
+                android:tint="@color/colorPrimary" />
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:entries="@array/android_dropdown_arrays"
+                android:padding="5dp" />
+
+            <!--<Spinner
+
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/android_dropdown_arrays"
+                android:background="@drawable/spinner"
+                android:spinnerMode="dropdown"/>-->
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+          <!--  <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="File Uploaded"
+                android:textSize="20dp"/>-->
+
+           <!-- <EditText
+                android:id="@+id/file_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="File Upload"
+                android:inputType="textEmailAddress"
+                android:textSize="13dp"
+                android:theme="@style/AppTheme"
+                />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    style="@style/AppTheme.RoundedCornerMaterialButton"
+                    android:text="Save"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+        </View>
+
+    </LinearLayout>
+
+</ScrollView>

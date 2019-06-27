@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splash_screen"
+    >
+
+
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#af0b0808"
+        android:weightSum="10"
+        >
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_app_logo"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Case file"
+            android:textAllCaps="false"
+            android:id="@+id/name"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:textSize="35sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="View your case details, case visits and download your case related files... "
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_weight="8"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            />
+    </LinearLayout>-->
+</LinearLayout>

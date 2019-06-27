@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">MyCase</string>
+    <string name="client">Manage Clients</string>
+    <string name="cases">Manage Cases</string>
+   <!-- <string name="title_notifications">Notifications</string>-->
+
+
+    <style name="AppTheme.RoundedCornerMaterialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/rounded_shape</item>
+    </style>
+
+    <string name="Eemail">Enter Correct Email Id</string>
+    <string name="Epassword">Enter Correct Password</string>
+
+    <string-array name="occurence">
+        <item>Once</item>
+        <item>Weekly</item>
+    </string-array>
+
+    <string-array name="pref_alarm_play_time_entries">
+        <item>10 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>3 minutes</item>
+        <item>5 minutes</item>
+    </string-array>
+
+    <string-array name="pref_alarm_play_time_values">
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>300</item>
+    </string-array>
+
+    <string-array name="android_dropdown_arrays">
+        <item>Status</item>
+        <item>OPENED</item>
+        <item>CLOSED</item>
+        <item>PENDING</item>
+        <item>RE-OPENED</item>
+
+    </string-array>
+
+    <string name="case_no">Enter a valid case number</string>
+    <string name="case_title">Enter a valid case title</string>
+    <string name="client_name">Enter a valid client name</string>
+    <string name="case_name">Enter a valid case name</string>
+    <string name="case_details">Enter a valid case details</string>
+    <string name="default_notification_channel_id">simplified_coding</string>
+    <string name="default_notification_channel_name">Simplified Coding</string>
+    <string name="subject" >Enter the Subject</string>
+    <string name="body" >Enter the Body</string>
+
+    <string name="emailerror">Enter a valid emailid</string>
+</resources>

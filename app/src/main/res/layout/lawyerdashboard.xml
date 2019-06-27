@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.synnapps.carouselview.CarouselView
+                        android:id="@+id/carouselView"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:fillColor="#FFFFFFFF"
+                        app:pageColor="#00000000"
+                        app:radius="6dp"
+                        app:slideInterval="3000"
+                        app:strokeColor="#FF777777"
+                        app:strokeWidth="1dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_addclient"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/add_client"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Add Client"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_addcase"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/add_case"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Add Case"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btn_managecase"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/folder"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Manage Case"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/reminder"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/reminder"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Reminder"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_notification"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/notification"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Notification"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btn_manageclient"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/manage_client"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Manage Client"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_send"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_send_black_24dp"
+                    android:tint="@color/colorPrimary"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Send"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:visibility="invisible"
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/add_case"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Air Tickets"
+                    android:visibility="invisible"
+                    android:textSize="11dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:visibility="invisible"
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/add_case"/>
+                <TextView
+                    android:visibility="invisible"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Air Tickets"
+                    android:textSize="11dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="60dp"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:weightSum="8">
+
+            <LinearLayout
+                android:id="@+id/firstLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:id="@+id/btn_managecase"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:textColor="@color/white">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/managecase" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Manage Case"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/reminder"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:background="@color/white"
+                        android:gravity="center"
+
+                        android:orientation="vertical"
+                        android:textColor="@color/white">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/reminder" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Reminder"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/firstLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:id="@+id/btn_addclient"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:background="@color/white"
+
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:textColor="@color/white">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/add_client" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Add Client"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:id="@+id/btn_addcase"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:background="@color/white"
+
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:textColor="@color/white">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/add_case" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Add Cases"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:background="@color/white"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/send"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Send Notification" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+-->
+
+    </LinearLayout>
+
+</LinearLayout>
